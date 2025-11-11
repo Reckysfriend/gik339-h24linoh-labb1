@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <!--
+    1) Vi lägger JS scripts i våran head med en defer tag. Våra scripts kommer att exekvera 
+       upp ifrån och ner så det kan vara viktigt att hålla koll på vad som exekveras först. 
+       
+    2) Defer används för att scripten ska excekveras efter alla andra element har skapats.
+       Det gör vi eftersom man inte skulle komma åt HTML element eller liknande som scripten
+       kanske behöver om de inte har skapats än och det kommer resultera i krashar. 
+     -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+</body>
+</html>
